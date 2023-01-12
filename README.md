@@ -37,12 +37,12 @@ CREATE TABLE users (
 \q
 ```
 
-### 4. run the Web API container
+### 5. run the Web API container
 ```bash
 docker run --name <web-api-container-name> -p 8080:8080 --link <db-container-name> <docker-account>/<project-name>
 ```
 
-### 4. check server is running
+### 6. check server is running
 ```bash
 GET    http://localhost:8080/user
 GET    http://localhost:8080/user/user_id
