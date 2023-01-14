@@ -1,8 +1,8 @@
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/eva81829/go-postgres v0.0.0-20230114144002-cc9340c7b698 h1:mu8jPl/N6qXpK0RVxQ17DFziRcYbO1LLEKdklMWuXuM=
-github.com/eva81829/go-postgres v0.0.0-20230114144002-cc9340c7b698/go.mod h1:A1Aq6KiaBhkCzoPqoTgraa/9PM54Xc0d6YtL7JGL+PM=
+github.com/eva81829/go-postgres v0.0.0-20230114153242-878a02286cf3 h1:27OwxHmy8EkON3RbApixuMtz1vuta3iQ9C4LwLQKwSc=
+github.com/eva81829/go-postgres v0.0.0-20230114153242-878a02286cf3/go.mod h1:A1Aq6KiaBhkCzoPqoTgraa/9PM54Xc0d6YtL7JGL+PM=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.8.2 h1:UzKToD9/PoFj/V4rvlKqTRKnQYyz8Sc1MJlv4JHPtvY=

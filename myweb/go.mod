@@ -3,7 +3,7 @@ module gogin
 go 1.19
 
 require (
-	github.com/eva81829/go-postgres v0.0.0-20230114144002-cc9340c7b698 // indirect
+	github.com/eva81829/go-postgres v0.0.0-20230114153242-878a02286cf3 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.8.2 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
