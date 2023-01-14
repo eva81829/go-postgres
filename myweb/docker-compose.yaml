@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  server:
+    build: .
+    volumes:
+      - .:/api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    entrypoint: go run main.go
+
+  db:
+    image: postgres
+    ports:
+      - "3306:5432"
+    environment:
+      - POSTGRES_USER=psqladmin
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=go_database
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes: 
+          - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+    restart: always
