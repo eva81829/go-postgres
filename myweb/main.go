@@ -1,7 +1,7 @@
 package main
 
 import (
-	"controller"
+	"github.com/eva81829/go-postgres/mypackage/controller"
 	"github.com/gin-gonic/gin"
 )
 

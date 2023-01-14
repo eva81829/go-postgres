@@ -9,7 +9,7 @@ import (
 )
 
 const (
-    host     = "go-docker-db-]po"
+    host     = "go-docker-db-1"
     port     = 5432
     user     = "psqladmin"
     password = "secret"
