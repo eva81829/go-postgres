@@ -13,12 +13,12 @@ git clone https://github.com/eva81829/go-postgres.git
 * launch terminal and switch the folder path to `\go-postgres\myweb`
 * you can either choose to **create container by docker compose** or **create separate containers** :
 
-##  create container by docker compose
+#### create container by docker compose
 ```bash
 docker compose up
 ```
 
-##  create separate containers
+####  create separate containers
 * build the images
 ```bash
 docker build -t <docker-account>/<project-name> .
