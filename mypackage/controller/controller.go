@@ -6,6 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"fmt"
+	"log"
+	"os"
 )
 
 const (
@@ -111,7 +113,15 @@ func ConnectDatabase() *sql.DB {
 }
 
 func checkErr(err error) {
-    if err != nil {
-        panic(err)
+	fileName := "go_debug.log"
+    logFile,err  := os.Create(fileName)
+    defer logFile.Close()
+
+	debugLog := log.New(logFile,"[Debug]",log.Llongfile)
+	if err != nil {
+		debugLog.Println("Connect Database Error!")
+		return
     }
+
+	debugLog.Println("Connect Database Success!")
 }
