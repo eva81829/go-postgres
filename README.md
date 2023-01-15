@@ -1,8 +1,7 @@
 ## Requirements
-- Golang
-- gin-gonic
+- Golang/gin-gonic
 - PostgreSQL
-- Docker
+- Docker/Docker Compose
 
 ## How to run this
 
@@ -10,19 +9,22 @@
 ```bash
 git clone https://github.com/eva81829/go-postgres.git
 ```
+### 2. create and run the container
+* launch terminal and switch the folder path to `\go-postgres\myweb`
+* you can either choose to **create container by docker compose** or **create separate containers** :
 
-### 2. install dependencies
+##  create container by docker compose
 ```bash
-go mod init <project-name>
+docker compose up
 ```
 
-### 3. prepare the image
+##  create separate containers
+* build the images
 ```bash
 docker build -t <docker-account>/<project-name> .
 docker pull postgres
 ```
-
-### 4. run the DB container and create DB
+* run the DB container and create DB
 ```bash
 docker run -d --name <db-container-name> -p 3306:5432 -e POSTGRES_PASSWORD=<password> postgres
 docker exec -it <db-container-name> psql -U postgres -c "create role <db-owner> with login password '<password>';"
@@ -37,12 +39,12 @@ CREATE TABLE users (
 \q
 ```
 
-### 5. run the Web API container
+* run the Web API container
 ```bash
 docker run --name <web-api-container-name> -p 8080:8080 --link <db-container-name> <docker-account>/<project-name>
 ```
 
-### 6. check server is running
+### 3. check server is running
 ```bash
 GET    http://localhost:8080/user
 GET    http://localhost:8080/user/user_id
