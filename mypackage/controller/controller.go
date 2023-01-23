@@ -11,7 +11,7 @@ import (
 )
 
 const (
-    host     = "go-docker-db-1"
+    host     = "myweb-db-1"
     port     = 5432
     user     = "psqladmin"
     password = "secret"
@@ -120,8 +120,7 @@ func checkErr(err error) {
 	debugLog := log.New(logFile,"[Debug]",log.Llongfile)
 	if err != nil {
 		debugLog.Println("Connect Database Error!")
-		return
-    }
-
-	debugLog.Println("Connect Database Success!")
+    } else {
+		debugLog.Println("Connect Database Success!")
+	}
 }
